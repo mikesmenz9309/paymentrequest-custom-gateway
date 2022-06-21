@@ -11,10 +11,10 @@ export default async (req, res) => {
       return res.json([{
         id: 'paypast_pay',
         name: 'Payfast',
-        checkoutUrl: `https://sleeky-pay.netlify.app/index.html`,
+        checkoutUrl: `https://paymentrequest-custom-gateway-sigma.vercel.app/src/index.html`,
       },{
-        id: 'paymentrequest-custom-gateway',
-        name: 'Google pay',
+        id: 'paypast_pay',
+        name: 'Payfast',
         checkoutUrl: process.env.CHECKOUT_URL,
         iconUrl: `${process.env.CHECKOUT_URL}/google_pay.png`
       }])
