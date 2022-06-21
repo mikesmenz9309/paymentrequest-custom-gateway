@@ -9,8 +9,8 @@ export default async (req, res) => {
 
       // Return the payment methods
       return res.json([{
-        id: 'sleeky_pay',
-        name: 'SleekyPay',
+        id: 'paypast_pay',
+        name: 'Payfast',
         checkoutUrl: `https://sleeky-pay.netlify.app/index.html`,
       },{
         id: 'paymentrequest-custom-gateway',
