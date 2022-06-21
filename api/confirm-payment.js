@@ -13,7 +13,7 @@ export default async (req, res) => {
     transactionId: req.body.requestId,
     instructions: 'Your payment will appear on your statement in the coming days',
     links: {
-      refunds: `${process.env.CHECKOUT_URL}/api/refund?transactionId=${req.body.requestId}`
+      refunds: `https://payment.snipcart.com/api/refund?transactionId=${req.body.requestId}`
     },
   }
 
@@ -21,7 +21,7 @@ export default async (req, res) => {
   // This is the secret API key created in Snipcart's merchant dashboard
   const options = {
     headers: {
-      Authorization: `Bearer ${process.env.SNIP_PAYMENT_API_KEY}`
+      Authorization: 'ZTAzMTJiYTUtZmJkZi00MzEyLTg4ZTktNWFiNWJkYWQ5MzRmNjM3OTE0MTM4OTE0NzQwMDQx'
     }
   }
 
